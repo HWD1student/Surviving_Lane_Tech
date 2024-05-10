@@ -1,0 +1,19 @@
+header{
+    text-align: center;
+}
+#intro{
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid;
+}
+.placeholder{
+    color: green;
+    background-color: white;
+}
+#bar{
+    background-color: green; /*NOT THE FINAL COLOR*/
+    position: sticky;
+    top: 0;
+    left: 0;
+}
