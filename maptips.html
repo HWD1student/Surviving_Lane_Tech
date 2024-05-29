@@ -4,90 +4,122 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Surviving Lane Tech - Maps</title>
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container-fluid" id="Maps">
-            <div id="bar">
+        <div class="container-fluid inconsolata">
+            <div class="bar"> <!--navigation bar-->
                 <header>
                     <h1>
                         Surviving Lane Tech
                     </h1>
                 </header>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Navbar</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="gpatips.html">GPA</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="maptips.html">Maps</a>
-                          </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="attendance.html">Attendance</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="grad_reqs.html">Graduation Requirements</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="nav_aspen.html">Navigating Aspen</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="tips.html">Tips</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gpatips.html">GPA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="maptips.html">Maps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="re_sources.html">Sources & Reasources</a>
+                            </li>
                         </ul>
                       </div>
                     </div>
                   </nav>
             </div>
-            <article id="Maps">
-                <section class="navigate">
-                    <h2>Navigating Lane Tech</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae totam deleniti nobis illo 
-                        dolorem omnis cupiditate, corrupti dicta esse tempora earum suscipit ut qui? Ab dolorem 
-                        natus commodi non autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Aliquid, eaque harum officia atque vitae assumenda dolore vero possimus culpa beatae, 
-                        praesentium, repudiandae maiores itaque iste. Enim rem impedit vel architecto!
-                    </p>
-                    <h6 class="placeholder">
-                        Put images of the Lane Tech map here, and maybe the navigation 
-                        program If I can figure out how to make it in time
-                    </h6>
-                </section>
-                <section id="map_image">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </section>
-                <section id="navigation_tips">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <ul>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <ul>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-                            </ul>
+            <hr>
+            <article id="maps"> <!--introduction-->
+                <h2>Navigating Lane Tech</h2>
+                <p>
+                   At first glance, Lane Tech's map and room numbering system may seem complicated and arbitrary.
+                   However, Navigating Lane Tech becomes much easier with more undertanding of the room numbering 
+                   system and layout. All of Lane's even-numbered rooms are located on the west (left on the map)
+                   side of the building, and all of the odd-numbered rooms are located on the east (right on the 
+                   map) side of the building. Additionally, smaller-numbered rooms tend to be on the north side of
+                   the building, and larger-numbered rooms tend to be on the south side. The first digit of a room 
+                   number also indicates what floor it is on; for example room 123 is located on the first floor, 
+                   whereas room 431 is located on the 4th floor. There are four main hallways, which connect doors/
+                   stairwells O and H, A and M, D and J, and A and D. Doors A, D, J, and M are the main enterances
+                   which students arrive through (A and D to the north, M and J to the south), of which M is the
+                   most important and most often open. If you want to know the general location of a room, you can 
+                   also use the "Find A Room" button in this webpage.
+                </p>
+                <hr>
+                <div class="row"> <!--photos (thanks!!)-->
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h3>First Floor</h3>
+                                <img src="media/floor1.png" class="img-fluid img-thumbnail" alt="first floor map">
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>Second Floor</h3>
+                                <img src="media/floor2.png" class="img-fluid img-thumbnail" alt="second floor map">
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>Third Floor</h3>
+                                <img src="media/floor3.png" class="img-fluid img-thumbnail" alt="third floor map">
+                            </div>
+                            <div class="col-sm-6">
+                                <h3>Fourth Floor</h3>
+                                <img src="media/floor4.png" class="img-fluid img-thumbnail" alt="fourth floor map">
+                            </div>
                         </div>
                     </div>
-                </section>
+                                <br>
+                                <button type="button" class="btn btn-lg btn-dark" onclick="rooms.findRoom()">Find A Room</button>
+                                <p id="answer-text">
+                                    The room you are looking for is located on the <strong><span id="floor?">____</span></strong> floor,
+                                    on the <strong><span id="side?">____</span></strong> side of the building.
+                                    It is between stairwells <strong><span id="hall1">____</span></strong> and <strong><span id="hall2">____</span></strong>.
+                                    It is <strong><span id="nextOrClosest">____</span></strong> to stairwell <strong><span id="closest?">____</span></strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"></div>
             </article>
+            <footer> 
+                <p>x</p>
+            </footer>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script>
-            var rooms = {
+
+            var x = document.getElementById("answer-text"); //javascript for finding room. I know this is absurdly long already
+            x.style.display = "none";
+
+            var rooms = { //all the rooms
                 betweenOZ: [133,129,127,135,137,139,233,231,229,235,239,333,331,329,335,337,339,427,429,433,437,431,435,439],
                 betweenZH: [122,124,128,134,132,130,224,226,228,234,232,230,324,326,328,334,332,330,440,436,432,438,434,430],
                 betweenOA: [115,123,117,119,125,215,223,217,219,221,225,315,319,323,317,321,325,327],
@@ -113,7 +145,403 @@
                 nextToN: [155,261,259],
                 nextToO: [125,225,241,327,341],
                 nextToZ: [128,133,228,233,328,333,428,427],
+
+                closestA: [107,111,115,117,213,207,211,215,217,219,305,309,307,311,319,315,317,321],
+                closestD: [104,110,210,206,308,304,310,306],
+                closestG: [114,120,116,214,220,314,316,320],
+                closestH: [134,140,224,234,334,32433,326,440,438,442],
+                closestI: [256,254,356,354],
+                closestJ: [138,144,146,148,238,242,240,244,246,248,250,252,338,340,344,342,346,348,350,352,444],
+                closestM: [147,149,161,151,199,243,247,249,251,245,253,343,347,349,351,443,447,449,445],
+                closestN: [157,257,255,],
+                closestO: [119,123,137,139,141,143,145,221,223,229,239,323,325,329,339],
+                closestZ: [124,129,132,130,135,226,232,230,231,235,331,330,335,337,436,432,429,433,434,439,431,435],
+
+                    findRoom: function(){ //finding the floor
+                        var roomString = prompt("What room are you trying to find?");
+                        var room = parseInt(roomString);
+                        if(room>=100 && room<200){
+                            document.getElementById("floor?").innerHTML = "1st";
+                        }
+                        else if(room>=200 && room<300){
+                            document.getElementById("floor?").innerHTML = "2nd";
+                        }
+                        else if(room>=300 && room<400){
+                            document.getElementById("floor?").innerHTML = "3rd";
+                        }
+                        else if(room>=400 && room<500){
+                            document.getElementById("floor?").innerHTML = "4th";
+                        }
+                        else{
+                            x.style.display = "block"
+                            document.getElementById("answer-text").innerHTML = "Hmm . . . I can't seem to find that room";
+                            var roomNotFound = true
+                        }
+                        if(roomNotFound != true){ //finding the side of the building
+                            if(room % 2 == 0){
+                                document.getElementById("side?").innerHTML = "even/west"
+                            }
+                            else{
+                                document.getElementById("side?").innerHTML = "odd/east"
+                            }
+                            for(var a=0; a<this.betweenAB.length; a++){ //finding the location
+                                if(this.betweenAB[a] == room){
+                                    var hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "A";
+                                    document.getElementById("hall2").innerHTML = "B";
+                                }
+                            }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenBC.length; a++){
+                                if(this.betweenBC[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "B";
+                                    document.getElementById("hall2").innerHTML = "C";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenCD.length; a++){
+                                if(this.betweenCD[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "C";
+                                    document.getElementById("hall2").innerHTML = "D";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenDG.length; a++){
+                                if(this.betweenDG[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "D";
+                                    document.getElementById("hall2").innerHTML = "G";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenHG.length; a++){
+                                if(this.betweenHG[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "H";
+                                    document.getElementById("hall2").innerHTML = "G";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenHJ.length; a++){
+                                if(this.betweenHJ[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "H";
+                                    document.getElementById("hall2").innerHTML = "J";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenJI.length; a++){
+                                if(this.betweenJI[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "J";
+                                    document.getElementById("hall2").innerHTML = "I";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenMN.length; a++){
+                                if(this.betweenMN[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "M";
+                                    document.getElementById("hall2").innerHTML = "N";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenOA.length; a++){
+                                if(this.betweenOA[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "O";
+                                    document.getElementById("hall2").innerHTML = "A";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenOM.length; a++){
+                                if(this.betweenOM[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "O";
+                                    document.getElementById("hall2").innerHTML = "M";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenOZ.length; a++){
+                                if(this.betweenOZ[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "O";
+                                    document.getElementById("hall2").innerHTML = "Z";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            for(a=0; a<this.betweenZH.length; a++){
+                                if(this.betweenZH[a] == room){
+                                    hallfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("hall1").innerHTML = "Z";
+                                    document.getElementById("hall2").innerHTML = "H";
+                                }
+                            }
+
+                        }
+                        if(hallfound != true){
+                            x.style.display = "block"
+                            document.getElementById("answer-text").innerHTML = "Hmm . . . I can't seem to find that room";
+                            var roomNotFound = true
+                        }
+                        if(roomNotFound != true){
+                            for(a=0; a<this.nextToA.length; a++){
+                                if(this.nextToA[a] == room){
+                                    var roomfound = true;
+                                    x.style.display = "block";
+                                    document.getElementById("nextOrClosest").innerHTML = "next";
+                                    document.getElementById("closest?").innerHTML = "A";
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToB.length; a++){
+                                    if(this.nextToB[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "B";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToC.length; a++){
+                                    if(this.nextToC[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "C";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToD.length; a++){
+                                    if(this.nextToD[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "D";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToG.length; a++){
+                                    if(this.nextToG[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "G";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToH.length; a++){
+                                    if(this.nextToH[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "H";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToI.length; a++){
+                                    if(this.nextToI[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "I";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToJ.length; a++){
+                                    if(this.nextToJ[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "J";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToM.length; a++){
+                                    if(this.nextToJ[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "J";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToN.length; a++){
+                                    if(this.nextToN[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "N";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToO.length; a++){
+                                    if(this.nextToO[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "O";
+                                    }
+                                }
+                            }
+                            if(roomfound != true){
+                                for(a=0; a<this.nextToZ.length; a++){
+                                    if(this.nextToZ[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "next";
+                                        document.getElementById("closest?").innerHTML = "Z";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestA.length; a++){
+                                    if(this.closestA[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "A";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestD.length; a++){
+                                    if(this.closestD[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "D";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestG.length; a++){
+                                    if(this.closestG[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "G";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestH.length; a++){
+                                    if(this.closestH[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "H";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestI.length; a++){
+                                    if(this.closestI[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "I";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestJ.length; a++){
+                                    if(this.closestI[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "I";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestM.length; a++){
+                                    if(this.closestM[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "M";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestN.length; a++){
+                                    if(this.closestN[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "N";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestO.length; a++){
+                                    if(this.closestO[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "O";
+                                    }
+                                }
+                            }
+                            if (roomfound != true){
+                                for(a=0; a<this.closestZ.length; a++){
+                                    if(this.closestZ[a] == room){
+                                        var roomfound = true;
+                                        x.style.display = "block";
+                                        document.getElementById("nextOrClosest").innerHTML = "closest";
+                                        document.getElementById("closest?").innerHTML = "Z";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
+        
         </script>
     </body>
 </html>
